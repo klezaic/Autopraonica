@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="Autopraonica" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Users\\kr3s1m1r\\Desktop\\autopraonica\\Autopraonica\.Web\\Autopraonica\.Web\\obj\\Release\\Package\\PackageTmp$" />
+    <parameterEntry kind="ProviderPath" scope="setAcl" match="^C:\\Users\\kr3s1m1r\\Desktop\\autopraonica\\Autopraonica\.Web\\Autopraonica\.Web\\obj\\Release\\Package\\PackageTmp$" />
+  </parameter>
+  <parameter name="Add write permission to App_Data Folder" description="Add write permission to App_Data folder" value="Autopraonica/App_Data" tags="Hidden">
+    <parameterEntry kind="ProviderPath" scope="setAcl" match="^C:\\Users\\kr3s1m1r\\Desktop\\autopraonica\\Autopraonica\.Web\\Autopraonica\.Web\\obj\\Release\\Package\\PackageTmp\\App_Data$" />
+  </parameter>
+  <parameter name="AutopraonicaDbContext-Web.config Connection String" description="" value="Data Source=tcp:j21j2dlhdq.database.windows.net,1433;Initial Catalog=Autopraonica_db;User Id=klezaic@j21j2dlhdq;Password=anthraxxx123DB" tags="">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\kr3s1m1r\\Desktop\\autopraonica\\Autopraonica\.Web\\Autopraonica\.Web\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='AutopraonicaDbContext']/@connectionString" />
+  </parameter>
+  <parameter name="DefaultConnection-Web.config Connection String" description="DefaultConnection Connection String used in web.config by the application to access the database." value="DefaultConnection_ConnectionString" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\kr3s1m1r\\Desktop\\autopraonica\\Autopraonica\.Web\\Autopraonica\.Web\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='DefaultConnection']/@connectionString" />
+  </parameter>
+</parameters>

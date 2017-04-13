@@ -1,0 +1,18 @@
+﻿@model Autopraonica.Model.Client
+@{
+    ViewBag.Title = "ClientEdit";
+}
+
+<h2>Uređivanje klijenta</h2>
+
+@using (Html.BeginForm())
+{
+    <text>
+        @Html.Partial("_ClientCreateOrEdit", Model)
+    </text>
+
+}
+<p class="btn btn-default">
+    @Html.ActionLink("Povratak", "ClientIndex")
+</p>
+

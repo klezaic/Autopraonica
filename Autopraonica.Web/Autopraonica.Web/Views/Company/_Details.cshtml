@@ -1,0 +1,16 @@
+﻿@model Autopraonica.Model.CompanyContact
+    <tr>
+        <td>
+                @Html.ValueFor(model => model.ContactType)
+        </td>
+        <td>
+            @Html.ValueFor(model => model.Value)
+        </td>
+        <td>
+            @Html.ActionLink("Uredi", "ContactEdit", new { id = Model.ID })
+        </td>
+        <td>
+            @Html.ActionLink("Obriši", "ContactDelete", new { id = Model.ID })
+        </td>
+        @Html.HiddenFor(model => model.CompanyID)
+    </tr>

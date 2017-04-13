@@ -1,0 +1,29 @@
+﻿﻿@model List<Autopraonica.Model.Reservation>
+
+<table id="tbl-companies" class="table table-condensed table-hover">
+    <thead>
+        <tr>
+            <th>Poslovnica</th>
+            <th>Tip Vozila</th>
+            <th>Trajanje</th>
+            <th>Klijent</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var reservation in Model)
+        {
+            <tr>
+                <td>@reservation.Company.Name</td>
+                <td>@reservation.VehicleType</td>
+                <td>@reservation.Length sati</td>
+                <td>@reservation.Client.Surname</td>
+                <td>@Html.ActionLink("Klijent", "ClientDetails", new { id = reservation.ClientID })</td>
+                <td>@Html.ActionLink("Detalji", "Details", new { id = reservation.ID })</td>
+                <td>@Html.ActionLink("Uredi", "Edit", new { id = reservation.ID })</td>
+                <td>@Html.ActionLink("Obriši", "Delete", new { id = reservation.ID })</td>
+            </tr>
+        }
+
+    </tbody>
+</table>

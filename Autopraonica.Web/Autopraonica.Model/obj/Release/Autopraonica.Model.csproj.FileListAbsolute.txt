@@ -1,0 +1,4 @@
+C:\Users\kr3s1m1r\Desktop\autopraonica\Autopraonica.Web\Autopraonica.Model\bin\Release\Autopraonica.Model.dll
+C:\Users\kr3s1m1r\Desktop\autopraonica\Autopraonica.Web\Autopraonica.Model\bin\Release\Autopraonica.Model.pdb
+C:\Users\kr3s1m1r\Desktop\autopraonica\Autopraonica.Web\Autopraonica.Model\obj\Release\Autopraonica.Model.dll
+C:\Users\kr3s1m1r\Desktop\autopraonica\Autopraonica.Web\Autopraonica.Model\obj\Release\Autopraonica.Model.pdb

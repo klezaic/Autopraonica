@@ -1,0 +1,18 @@
+﻿
+@{
+    ViewBag.Title = "ClientCreate";
+}
+
+<h2>Dodavanje klijenta</h2>
+
+@using (Html.BeginForm())
+{
+    <text>
+        @Html.Partial("_ClientCreateOrEdit")
+    </text>
+
+}
+<p class="btn btn-default">
+    @Html.ActionLink("Povratak", "ClientIndex")
+</p>
+

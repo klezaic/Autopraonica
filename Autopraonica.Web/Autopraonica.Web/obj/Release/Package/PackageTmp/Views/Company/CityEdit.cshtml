@@ -1,0 +1,20 @@
+﻿@model Autopraonica.Model.City
+@{
+    ViewBag.Title = "CityEdit";
+}
+
+<h2>Uređivanje grada</h2>
+<br />
+
+@using (Html.BeginForm())
+{
+
+    <text>
+        @Html.Partial("_CityCreateOrEdit")
+        @Html.HiddenFor(p => p.ID)
+    </text>
+}
+
+<p class="btn btn-default">
+    @Html.ActionLink("Povratak", "CityIndex")
+</p>

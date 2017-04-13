@@ -1,0 +1,25 @@
+﻿@model List<Autopraonica.Model.City>
+
+<table id="tbl-companies" class="table table-condensed table-hover">
+    <thead>
+        <tr>
+            <th>Naziv</th>
+            <th>Poštanski broj</th>
+            <th></th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var city in Model)
+        {
+            <tr>
+                <td>@city.Name</td>
+                <td>@city.PostalCode</td>
+                <td>@Html.ActionLink("Uredi", "CityEdit", new { id = city.ID })</td>
+                <td>@Html.ActionLink("Obriši", "CityDelete", new { id = city.ID })</td>
+            </tr>
+        }
+
+    </tbody>
+</table>
+

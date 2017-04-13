@@ -1,0 +1,31 @@
+﻿﻿@model List<Autopraonica.Model.Company>
+
+<table id="tbl-companies" class="table table-condensed table-hover">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Naziv</th>
+            <th>Adresa</th>
+            <th>Poštanski broj</th>
+            <th>Grad</th>
+            <th></th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var company in Model)
+        {
+            <tr>
+                <td>@company.ID</td>
+                <td>@company.Name</td>
+                <td>@company.Address</td>
+                <td>@company.City.PostalCode</td>
+                <td>@company.City.Name</td>
+                <td>@Html.ActionLink("Kontakti", "Details", new { id = company.ID })</td>
+                <td>@Html.ActionLink("Uredi", "Edit", new { id = company.ID })</td>
+                <td>@Html.ActionLink("Obriši", "Delete", new { id = company.ID })</td>
+            </tr>
+        }
+
+    </tbody>
+</table>

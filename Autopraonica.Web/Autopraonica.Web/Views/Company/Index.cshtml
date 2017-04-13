@@ -1,0 +1,20 @@
+﻿@model List<Autopraonica.Model.Company>
+@{
+    ViewBag.Title = "Index";
+}
+<h2>Pregled Poslovnica</h2>
+<br />
+
+<p class="btn btn-default">
+    @Html.ActionLink("Dodaj Poslovnicu", "Create")
+</p>
+
+<p class="btn btn-default">
+    @Html.ActionLink("Pregled gradova", "CityIndex")
+</p>
+<br /><br />
+    @Html.Partial("_IndexTable", Model)
+<br />
+<p class="btn btn-default">
+    @Html.ActionLink("Povratak", "Index", "Home")
+</p>

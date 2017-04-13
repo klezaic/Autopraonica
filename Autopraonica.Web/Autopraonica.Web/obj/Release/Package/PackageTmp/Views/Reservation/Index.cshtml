@@ -1,0 +1,20 @@
+﻿@model List<Autopraonica.Model.Reservation>
+@{
+    ViewBag.Title = "Index";
+}
+<h2>Pregled Rezervacija</h2>
+<br />
+
+<p class="btn btn-default">
+    @Html.ActionLink("Dodaj Rezervaciju", "Create")
+</p>
+
+<p class="btn btn-default">
+    @Html.ActionLink("Pregled klijenata", "ClientIndex")
+</p>
+<br /><br />
+    @Html.Partial("_IndexTable", Model)
+<br />
+<p class="btn btn-default">
+    @Html.ActionLink("Povratak", "Index", "Home")
+</p>

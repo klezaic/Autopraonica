@@ -1,0 +1,17 @@
+﻿@{
+    ViewBag.Title = "ContactCreate";
+}
+
+<h2>Promjena kontakta</h2>
+
+@using (Html.BeginForm())
+{
+    <text>
+        @Html.Partial("_ContactCreateOrEdit")
+    </text>
+
+}
+<p class="btn btn-default">
+    @Html.ActionLink("Povratak", "Index")
+</p>
+

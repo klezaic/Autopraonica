@@ -1,0 +1,27 @@
+﻿﻿@model List<Autopraonica.Model.Client>
+
+<table id="tbl-companies" class="table table-condensed table-hover">
+    <thead>
+        <tr>
+            <th>Ime</th>
+            <th>Prezmie</th>
+            <th>eMail</th>
+            <th>Broj rezervacija</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var client in Model)
+        {
+            <tr>
+                <td>@client.Name</td>
+                <td>@client.Surname</td>
+                <td>@client.Email</td>
+                <td>@client.Reservations.Count</td>
+                <td>@Html.ActionLink("Uredi", "ClientEdit", new { id = client.ID })</td>
+                <td>@Html.ActionLink("Obriši", "ClientDelete", new { id = client.ID })</td>
+            </tr>
+        }
+
+    </tbody>
+</table>

@@ -1,0 +1,17 @@
+﻿﻿@model Autopraonica.Model.Company
+
+@{
+    ViewBag.Title = "Nova poslovnica";
+}
+<h2>Dodavanje nove poslovnice</h2>
+@using (Html.BeginForm())
+{
+    <text>
+        @Html.Partial("_CreateOrEdit")
+    </text>
+
+}
+<br />
+<p class="btn btn-default">
+    @Html.ActionLink("Povratak", "Index")
+</p>

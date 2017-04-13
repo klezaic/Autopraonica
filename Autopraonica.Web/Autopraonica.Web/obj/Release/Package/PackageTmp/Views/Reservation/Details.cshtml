@@ -1,0 +1,34 @@
+﻿@model Autopraonica.Model.Reservation
+<div class="form-horizontal">
+    <br />
+    <div class="form-group">
+        Poslovnica:
+        @Html.ValueFor(model => model.Company.Name)
+    </div>
+    <div class="form-group">
+        Adresa:
+        @Html.ValueFor(model => model.Company.Address)
+    </div>
+    <div class="form-group">
+        Tip vozila:
+        @Html.ValueFor(model => model.VehicleType)
+    </div>
+    <div class="form-group">
+        Trajanje:
+        @Html.ValueFor(model => model.Length)
+    </div>
+    <div class="form-group">
+        Ime klijenta:
+        @Html.ValueFor(model => model.Client.Name)
+    </div>
+    <div class="form-group">
+        Prezime klijenta:
+        @Html.ValueFor(model => model.Client.Surname)
+    </div>
+
+    @Html.HiddenFor(model => model.ID)
+
+    <p class="btn btn-default">
+        @Html.ActionLink("Povratak", "Index", "Reservation")
+    </p>
+</div>

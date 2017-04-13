@@ -1,0 +1,18 @@
+﻿@model List<Autopraonica.Model.City>
+@{
+    ViewBag.Title = "CityIndex";
+}
+
+<h2>Pregled Gradova</h2>
+<br />
+<p class="btn btn-default">
+    @Html.ActionLink("Dodaj Grad", "CityCreate")
+</p>
+<br /><br />
+
+@Html.Partial("_CityIndexTable", Model)
+
+<br />
+<p class="btn btn-default">
+    @Html.ActionLink("Povratak", "Index")
+</p>

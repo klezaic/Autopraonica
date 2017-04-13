@@ -1,0 +1,30 @@
+﻿@model List<Autopraonica.Model.CompanyContact>
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Pregled kontakata</h2>
+
+<p class="btn btn-default">
+    @Html.ActionLink("Dodaj kontakt", "ContactCreate", new { id = Model.First().CompanyID })
+</p>
+
+<table id="tbl-companies" class="table table-condensed table-hover">
+    <thead>
+        <tr>
+            <th>Vrsta kontakta</th>
+            <th>Broj/Mail</th>
+            <th></th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var c in Model)
+        {
+            @Html.Partial("_Details", c)
+        }
+    </tbody>
+</table>
+<p class="btn btn-default">
+    @Html.ActionLink("Povratak", "Index")
+</p>

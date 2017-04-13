@@ -1,0 +1,17 @@
+﻿@model List<Autopraonica.Model.Client>
+@{
+    ViewBag.Title = "ClientIndex";
+}
+<h2>Pregled Klijenata</h2>
+<br />
+
+<p class="btn btn-default">
+    @Html.ActionLink("Dodaj Klijenta", "ClientCreate")
+</p>
+
+<br /><br />
+@Html.Partial("_ClientIndexTable", Model)
+<br />
+<p class="btn btn-default">
+    @Html.ActionLink("Povratak", "Index", "Reservation")
+</p>

@@ -1,0 +1,10 @@
+C:\Users\kr3s1m1r\Desktop\autopraonica\Autopraonica.Web\Autopraonica.Model\bin\Debug\Autopraonica.Model.dll
+C:\Users\kr3s1m1r\Desktop\autopraonica\Autopraonica.Web\Autopraonica.Model\bin\Debug\Autopraonica.Model.pdb
+C:\Users\kr3s1m1r\Desktop\autopraonica\Autopraonica.Web\Autopraonica.Model\obj\Debug\Autopraonica.Model.dll
+C:\Users\kr3s1m1r\Desktop\autopraonica\Autopraonica.Web\Autopraonica.Model\obj\Debug\Autopraonica.Model.pdb
+C:\Users\kr3s1m1r\Desktop\autopraonica\Autopraonica.Web\Autopraonica.Model\obj\Debug\Autopraonica.Model.csprojResolveAssemblyReference.cache
+D:\Workspace\C#\autopraonica\Autopraonica.Web\Autopraonica.Model\bin\Debug\Autopraonica.Model.dll
+D:\Workspace\C#\autopraonica\Autopraonica.Web\Autopraonica.Model\bin\Debug\Autopraonica.Model.pdb
+D:\Workspace\C#\autopraonica\Autopraonica.Web\Autopraonica.Model\obj\Debug\Autopraonica.Model.csprojResolveAssemblyReference.cache
+D:\Workspace\C#\autopraonica\Autopraonica.Web\Autopraonica.Model\obj\Debug\Autopraonica.Model.dll
+D:\Workspace\C#\autopraonica\Autopraonica.Web\Autopraonica.Model\obj\Debug\Autopraonica.Model.pdb

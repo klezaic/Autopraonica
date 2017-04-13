@@ -1,0 +1,21 @@
+﻿@model Autopraonica.Model.Reservation
+@{
+    ViewBag.Title = "Uređivanje poslovnice";
+}
+
+<h2>Uređivanje poslovnice</h2>
+
+@using (Html.BeginForm())
+{
+
+    <text>
+        @Html.Partial("_CreateOrEdit")
+        @Html.HiddenFor(p => p.ID)
+    </text>
+}
+
+<div>
+    <p class="btn btn-default">
+        @Html.ActionLink("Povratak", "Index")
+    </p>
+</div>

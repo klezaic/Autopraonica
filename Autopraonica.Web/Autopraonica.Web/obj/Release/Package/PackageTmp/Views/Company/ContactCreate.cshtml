@@ -1,0 +1,20 @@
+﻿
+@model Autopraonica.Model.Company
+@{
+    ViewBag.Title = "ContactCreate";
+}
+
+<h2>Izrada novog kontakta</h2>
+
+@using (Html.BeginForm())
+{
+    <text>
+        @Html.Hidden("ID", Model.ID)
+        @Html.Partial("_ContactCreateOrEdit", new Autopraonica.Model.CompanyContact())      
+    </text>
+
+}
+<p class="btn btn-default">
+    @Html.ActionLink("Povratak", "Index")
+</p>
+

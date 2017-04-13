@@ -1,0 +1,26 @@
+﻿@model Autopraonica.Model.Client
+<div class="form-horizontal">
+    <br />
+    <div class="form-group">
+        Ime klijenta:
+        @Html.ValueFor(model => model.Name)
+    </div>
+    <div class="form-group">
+        Prezime klijenta:
+        @Html.ValueFor(model => model.Surname)
+    </div>
+    <div class="form-group">
+        Broj rezervacija:
+        @Html.ValueFor(model => model.Reservations.Count)
+    </div>
+    <div class="form-group">
+        E-Mail:
+        @Html.ValueFor(model => model.Email)
+    </div>
+
+    @Html.HiddenFor(model => model.ID)
+
+    <p class="btn btn-default">
+        @Html.ActionLink("Povratak", "Index", "Reservation")
+    </p>
+</div>
